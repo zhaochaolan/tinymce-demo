@@ -1,10 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-// import tinymce from "tinymce/tinymce";
-// import Editor from "@tinymce/tinymce-vue";
-// import "tinymce/icons/default";
-// import "tinymce/themes/silver/theme.min.js";
-// Vue.component('editor', Editor); //注册全局组件
+//引入element ui 支持vue3.0
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(ElementPlus)
+app.mount('#app')
